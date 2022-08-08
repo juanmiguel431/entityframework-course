@@ -10,6 +10,18 @@ namespace DatabaseFirstDemo
     {
         static void Main(string[] args)
         {
+
+            var context = new DatabaseFirstDemoEntities();
+
+            var post = new Post()
+            {
+                Body = "Body2",
+                DatePublished = DateTime.Now,
+                Title = "Title2"
+            };
+            context.Posts.Add(post);
+
+            context.SaveChanges();
         }
     }
 }
