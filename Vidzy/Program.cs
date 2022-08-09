@@ -15,7 +15,9 @@ namespace Vidzy
                 //context.AddVideo("Terminator", DateTime.Now, "Action");
                 //context.AddVideo("Clip", DateTime.Now, "Comedy");
                 //context.AddVideo("Sex Education", DateTime.Now, "Comedy");
-                context.AddVideo("Resident Evil", DateTime.Now, "Horror");
+
+                // context.AddVideo("Spider Man", DateTime.Now, "Action", Classification.Gold);
+                context.AddVideo("Betty la fea", DateTime.Now, "Thriller", Classification.Platinum);
                 context.SaveChanges();
             }
         }
