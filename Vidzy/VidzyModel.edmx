@@ -100,7 +100,7 @@
           <End Role="Genres" Type="Self.Genre" Multiplicity="*" />
           <End Role="Videos" Type="Self.Video" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="VidzyEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="VidzyDbContext" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Genres" EntityType="Self.Genre" />
           <EntitySet Name="Videos" EntityType="Self.Video" />
           <AssociationSet Name="VideoGenres" Association="Self.VideoGenres">
@@ -118,7 +118,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="VidzyModelStoreContainer" CdmEntityContainer="VidzyEntities">
+        <EntityContainerMapping StorageEntityContainer="VidzyModelStoreContainer" CdmEntityContainer="VidzyDbContext">
           <EntitySetMapping Name="Genres">
             <EntityTypeMapping TypeName="VidzyModel.Genre">
               <MappingFragment StoreEntitySet="Genres">

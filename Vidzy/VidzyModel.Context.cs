@@ -15,10 +15,10 @@ namespace Vidzy
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class VidzyEntities : DbContext
+    public partial class VidzyDbContext : DbContext
     {
-        public VidzyEntities()
-            : base("name=VidzyEntities")
+        public VidzyDbContext()
+            : base("name=VidzyDbContext")
         {
         }
     
