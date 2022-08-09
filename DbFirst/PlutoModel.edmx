@@ -63,13 +63,6 @@
           <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Password" Type="int" Nullable="false" />
         </EntityType>
-        <EntityType Name="UserProfiles">
-          <Key>
-            <PropertyRef Name="UserProfileID" />
-          </Key>
-          <Property Name="UserProfileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="255" />
-        </EntityType>
         <Association Name="FK_Courses_Authors">
           <End Role="Authors" Type="Self.Authors" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -134,7 +127,6 @@
           <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tags" EntityType="Self.Tags" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="UserProfiles" EntityType="Self.UserProfiles" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Courses_Authors" Association="Self.FK_Courses_Authors">
             <End Role="Authors" EntitySet="Authors" />
             <End Role="Courses" EntitySet="Courses" />
@@ -172,7 +164,7 @@
           <Property Name="AuthorID" Type="Int32" Nullable="false" />
           <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Level" Type="String" Nullable="false" />
+          <Property Name="Level" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="Author" Relationship="Self.FK_Courses_Authors" FromRole="Courses" ToRole="Authors" />
           <NavigationProperty Name="CourseSections" Relationship="Self.FK_CourseSections_Courses" FromRole="Courses" ToRole="CourseSections" />
           <NavigationProperty Name="Tags" Relationship="Self.CourseTags" FromRole="Courses" ToRole="Tags" />
@@ -263,15 +255,7 @@
             <End Role="Courses" EntitySet="Courses" />
             <End Role="Tags" EntitySet="Tags" />
           </AssociationSet>
-          <EntitySet Name="UserProfiles" EntityType="PlutoModel.UserProfile" />
         </EntityContainer>
-        <EntityType Name="UserProfile">
-          <Key>
-            <PropertyRef Name="UserProfileID" />
-          </Key>
-          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="UserProfileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -342,14 +326,6 @@
               <ScalarProperty Name="TagID" ColumnName="TagID" />
             </EndProperty>
           </AssociationSetMapping>
-          <EntitySetMapping Name="UserProfiles">
-            <EntityTypeMapping TypeName="PlutoModel.UserProfile">
-              <MappingFragment StoreEntitySet="UserProfiles">
-                <ScalarProperty Name="UserProfileID" ColumnName="UserProfileID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
