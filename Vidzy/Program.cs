@@ -10,6 +10,13 @@ namespace Vidzy
     {
         static void Main(string[] args)
         {
+            using (var context = new VidzyDbContext())
+            {
+                context.AddVideo("Terminator", DateTime.Now, "Action");
+                context.AddVideo("Clip", DateTime.Now, "Comedy");
+                context.AddVideo("Sex Education", DateTime.Now, "Comedy");
+                context.SaveChanges();
+            }
         }
     }
 }
