@@ -12,9 +12,10 @@ namespace Vidzy
         {
             using (var context = new VidzyDbContext())
             {
-                context.AddVideo("Terminator", DateTime.Now, "Action");
-                context.AddVideo("Clip", DateTime.Now, "Comedy");
-                context.AddVideo("Sex Education", DateTime.Now, "Comedy");
+                //context.AddVideo("Terminator", DateTime.Now, "Action");
+                //context.AddVideo("Clip", DateTime.Now, "Comedy");
+                //context.AddVideo("Sex Education", DateTime.Now, "Comedy");
+                context.AddVideo("Resident Evil", DateTime.Now, "Horror");
                 context.SaveChanges();
             }
         }

@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="659e2ac94c884d9b91408ba7dcb9368a" Name="Diagram1">
+      <Diagram DiagramId="659e2ac94c884d9b91408ba7dcb9368a" Name="Diagram1" ZoomLevel="132">
         <EntityTypeShape EntityType="VidzyModel.Genre" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="VidzyModel.Video" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <AssociationConnector Association="VidzyModel.VideoGenres" ManuallyRouted="false" />
+        <AssociationConnector Association="VidzyModel.Videos_Genres_Id_fk" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

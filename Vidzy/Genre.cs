@@ -17,13 +17,13 @@ namespace Vidzy
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Genre()
         {
-            this.Videos = new HashSet<Video>();
+            this.Videos1 = new HashSet<Video>();
         }
     
         public byte Id { get; set; }
         public string Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Video> Videos { get; set; }
+        public virtual ICollection<Video> Videos1 { get; set; }
     }
 }
