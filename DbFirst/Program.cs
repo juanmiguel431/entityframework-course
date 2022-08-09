@@ -10,6 +10,18 @@ namespace DbFirst
     {
         static void Main(string[] args)
         {
+            var context = new PlutoDbContext();
+
+            var newCourse = new Course()
+            {
+                Level = CourseLevel.Intermediate
+            };
+            
+            var courses = context.GetCourses();
+            foreach (var course in courses)
+            {
+                Console.WriteLine(course.Title);
+            }
         }
     }
 }

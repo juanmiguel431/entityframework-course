@@ -11,13 +11,10 @@ namespace DbFirst
 {
     using System;
     
-    public partial class GetCourses_Result
+    public enum CourseLevel : byte
     {
-        public int CourseID { get; set; }
-        public int AuthorID { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public short FullPrice { get; set; }
-        public string Level { get; set; }
+        Beginner = 1,
+        Intermediate = 2,
+        Advance = 3
     }
 }
