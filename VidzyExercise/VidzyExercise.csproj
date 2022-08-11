@@ -59,6 +59,10 @@
     <Compile Include="Migrations\202208110010012_InitialModel.designer.cs">
       <DependentUpon>202208110010012_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208110020436_SeedGenresTable.cs" />
+    <Compile Include="Migrations\202208110020436_SeedGenresTable.designer.cs">
+      <DependentUpon>202208110020436_SeedGenresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Video.cs" />
@@ -73,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202208110010012_InitialModel.resx">
       <DependentUpon>202208110010012_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208110020436_SeedGenresTable.resx">
+      <DependentUpon>202208110020436_SeedGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
