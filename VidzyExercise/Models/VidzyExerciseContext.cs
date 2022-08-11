@@ -7,6 +7,9 @@ namespace VidzyExercise.Models
 {
     public partial class VidzyExerciseContext : DbContext
     {
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<Video> Videos { get; set; }
+        
         public VidzyExerciseContext()
             : base("name=VidzyExercise")
         {
