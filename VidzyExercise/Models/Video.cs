@@ -6,11 +6,6 @@ namespace VidzyExercise.Models
 {
     public class Video
     {
-        public Video()
-        {
-            Genres = new List<Genre>();
-        }
-        
         public int Id { get; set; }
         
         [Required]
@@ -18,6 +13,7 @@ namespace VidzyExercise.Models
         
         public DateTime ReleaseDate { get; set; }
         
-        public IList<Genre> Genres { get; set; }
+        [Required]
+        public Genre Genre { get; set; }
     }
 }
