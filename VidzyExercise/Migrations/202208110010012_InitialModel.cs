@@ -38,13 +38,6 @@
                 .ForeignKey("dbo.Genres", t => t.Genre_Id, cascadeDelete: true)
                 .Index(t => t.Video_Id)
                 .Index(t => t.Genre_Id);
-
-            Sql(@"INSERT INTO dbo.Genres (Id, Name) VALUES (1, 'Comedy');
-                INSERT INTO dbo.Genres (Id, Name) VALUES (2, 'Action');
-                INSERT INTO dbo.Genres (Id, Name) VALUES (3, 'Horror');
-                INSERT INTO dbo.Genres (Id, Name) VALUES (4, 'Thriller');
-                INSERT INTO dbo.Genres (Id, Name) VALUES (5, 'Family');
-                INSERT INTO dbo.Genres (Id, Name) VALUES (6, 'Romance');");
         }
         
         public override void Down()
