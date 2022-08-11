@@ -67,7 +67,12 @@
     <Compile Include="Migrations\202208110025359_RemovingManyToManyRelationFromVideosAndGenres.designer.cs">
       <DependentUpon>202208110025359_RemovingManyToManyRelationFromVideosAndGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208110031340_AddClassificationToVideosTable.cs" />
+    <Compile Include="Migrations\202208110031340_AddClassificationToVideosTable.designer.cs">
+      <DependentUpon>202208110031340_AddClassificationToVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Classification.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Models\VidzyExerciseContext.cs" />
@@ -87,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208110025359_RemovingManyToManyRelationFromVideosAndGenres.resx">
       <DependentUpon>202208110025359_RemovingManyToManyRelationFromVideosAndGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208110031340_AddClassificationToVideosTable.resx">
+      <DependentUpon>202208110031340_AddClassificationToVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,5 +15,7 @@ namespace VidzyExercise.Models
         
         [Required]
         public Genre Genre { get; set; }
+
+        public Classification Classification { get; set; }
     }
 }
