@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityConfigurations\GenreConfiguration.cs" />
     <Compile Include="EntityConfigurations\VideoConfiguration.cs" />
     <Compile Include="Migrations\202208110010012_InitialModel.cs" />
     <Compile Include="Migrations\202208110010012_InitialModel.designer.cs">
@@ -79,6 +80,10 @@
     <Compile Include="Migrations\202208120234507_ChangesInVideoModel.cs" />
     <Compile Include="Migrations\202208120234507_ChangesInVideoModel.designer.cs">
       <DependentUpon>202208120234507_ChangesInVideoModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208120238359_GenreTableChanges.cs" />
+    <Compile Include="Migrations\202208120238359_GenreTableChanges.designer.cs">
+      <DependentUpon>202208120238359_GenreTableChanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classification.cs" />
@@ -110,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208120234507_ChangesInVideoModel.resx">
       <DependentUpon>202208120234507_ChangesInVideoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208120238359_GenreTableChanges.resx">
+      <DependentUpon>202208120238359_GenreTableChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
