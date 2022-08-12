@@ -71,6 +71,10 @@
     <Compile Include="Migrations\202208110031340_AddClassificationToVideosTable.designer.cs">
       <DependentUpon>202208110031340_AddClassificationToVideosTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208120227214_FieldsAreNotRequiredInVideosTable.cs" />
+    <Compile Include="Migrations\202208120227214_FieldsAreNotRequiredInVideosTable.designer.cs">
+      <DependentUpon>202208120227214_FieldsAreNotRequiredInVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classification.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -95,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208110031340_AddClassificationToVideosTable.resx">
       <DependentUpon>202208110031340_AddClassificationToVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208120227214_FieldsAreNotRequiredInVideosTable.resx">
+      <DependentUpon>202208120227214_FieldsAreNotRequiredInVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
