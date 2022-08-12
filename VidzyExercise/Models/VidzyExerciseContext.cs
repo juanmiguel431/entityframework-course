@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
+using VidzyExercise.EntityConfigurations;
 
 namespace VidzyExercise.Models
 {
@@ -15,9 +16,9 @@ namespace VidzyExercise.Models
         {
         }
 
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new VideoConfiguration());
         }
     }
 }

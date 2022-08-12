@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityConfigurations\VideoConfiguration.cs" />
     <Compile Include="Migrations\202208110010012_InitialModel.cs" />
     <Compile Include="Migrations\202208110010012_InitialModel.designer.cs">
       <DependentUpon>202208110010012_InitialModel.cs</DependentUpon>
@@ -74,6 +75,10 @@
     <Compile Include="Migrations\202208120227214_FieldsAreNotRequiredInVideosTable.cs" />
     <Compile Include="Migrations\202208120227214_FieldsAreNotRequiredInVideosTable.designer.cs">
       <DependentUpon>202208120227214_FieldsAreNotRequiredInVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202208120234507_ChangesInVideoModel.cs" />
+    <Compile Include="Migrations\202208120234507_ChangesInVideoModel.designer.cs">
+      <DependentUpon>202208120234507_ChangesInVideoModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classification.cs" />
@@ -102,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208120227214_FieldsAreNotRequiredInVideosTable.resx">
       <DependentUpon>202208120227214_FieldsAreNotRequiredInVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208120234507_ChangesInVideoModel.resx">
+      <DependentUpon>202208120234507_ChangesInVideoModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
