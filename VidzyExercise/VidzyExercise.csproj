@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityConfigurations\GenreConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TagConfiguration.cs" />
     <Compile Include="EntityConfigurations\VideoConfiguration.cs" />
     <Compile Include="Migrations\202208110010012_InitialModel.cs" />
     <Compile Include="Migrations\202208110010012_InitialModel.designer.cs">
@@ -85,9 +86,14 @@
     <Compile Include="Migrations\202208120238359_GenreTableChanges.designer.cs">
       <DependentUpon>202208120238359_GenreTableChanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202208120253399_TagsTableAdded.cs" />
+    <Compile Include="Migrations\202208120253399_TagsTableAdded.designer.cs">
+      <DependentUpon>202208120253399_TagsTableAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Classification.cs" />
     <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Models\VidzyExerciseContext.cs" />
     <Compile Include="Program.cs" />
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202208120238359_GenreTableChanges.resx">
       <DependentUpon>202208120238359_GenreTableChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202208120253399_TagsTableAdded.resx">
+      <DependentUpon>202208120253399_TagsTableAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

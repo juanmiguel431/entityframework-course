@@ -13,5 +13,6 @@ namespace VidzyExercise.Models
         public Genre Genre { get; set; }
         public Classification Classification { get; set; }
         public byte GenreId { get; set; }
+        public IList<Tag> Tags { get; set; }
     }
 }

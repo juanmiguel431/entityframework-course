@@ -20,6 +20,7 @@ namespace VidzyExercise.Models
         {
             modelBuilder.Configurations.Add(new VideoConfiguration());
             modelBuilder.Configurations.Add(new GenreConfiguration());
+            modelBuilder.Configurations.Add(new TagConfiguration());
         }
     }
 }
